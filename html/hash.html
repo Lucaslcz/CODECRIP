@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODECRIP | Função Hash</title>
+    <link rel="stylesheet" href="/css/style.css"> 
+</head>
+
+<body>
+    <nav class="top-navbar">
+        <span class="logo">CODECRIP</span>
+        <div class="nav-links">
+            <a href="index.html">INÍCIO</a>
+            <a href="cesar.html">CIFRA DE CÉSAR</a> 
+            <a href="hash.html">FUNÇÃO HASH</a> 
+        </div>
+    </nav>
+    
+    <div class="main-content">
+        <section id="hash-container" class="cifra-container-style"> 
+            <h2>Função Hash (SHA-256)</h2>
+
+            <form id="hash-form">
+                
+                <div class="input-group">
+                    <label for="texto-hash-input">Texto de Entrada:</label>
+                    <textarea id="texto-hash-input" rows="6" placeholder="Digite a mensagem para gerar o hash..."></textarea>
+                </div>
+                
+                <div class="input-group">
+                    <label for="algoritmo-select">Algoritmo:</label>
+                    <select id="algoritmo-select" disabled>
+                        <option value="sha256">SHA-256</option>
+                    </select>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" id="btn-hash">GERAR HASH</button>
+                    <button type="reset" id="btn-limpar-hash">LIMPAR</button>
+                </div>
+
+            </form>
+            
+            <div id="resultado-container">
+                <h3>Resultado (Hash):</h3>
+                <p id="hash-output">O resultado do hash (digest) aparecerá aqui.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="/javascript/hash.js"></script> 
+</body>
+</html>

@@ -1,0 +1,268 @@
+:root {
+    --color-primary: #00bcd4;
+    --color-secondary: #0097a7;
+    --color-background: #121212;
+    --color-text-light: #f0f0f0;
+    --color-error: #f44336;
+}
+
+/* CORPO DO SITE */
+body {
+    /*background-image: url("/HTML/Projetos/CODECRIP/midias/fundo.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;*/
+    background-color: var(--color-background); 
+    color: var(--color-text-light);
+    font-family: 'Consolas', 'Courier New', monospace;
+    min-height: 100vh;
+    padding-top: 70px;
+}
+h1 {
+    color: var(--color-primary);
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    line-height: 40px;
+    margin-top: 40px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 5px var(--color-primary), 0 0 10px var(--color-secondary);
+}
+h1 span {
+    display: block;
+    line-height: 0.8;
+}
+
+/* MENU DO SITE */
+.top-navbar {
+    width: 99%;
+    background-color: rgba(18, 18, 18, 0.98); 
+    padding: 15px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid var(--color-primary);
+}
+.top-navbar .logo {
+    color: var(--color-primary);
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px var(--color-primary);
+}
+.nav-links a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    margin-left: 15px; 
+    font-size: 1em;
+    font-weight: 500;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+.nav-links a:hover {
+    color: var(--color-primary);
+    text-shadow: 0 0 3px var(--color-primary);
+    border-top: 2px solid ;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.options-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+.action-button { 
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 30px 10px;
+    text-align: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 15px;
+    width: 200px;
+    height: 80px;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.4);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action-button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 20px var(--color-primary), 0 5px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    background-color: rgba(40, 40, 40, 0.95);
+}
+.action-button a { 
+    color: var(--color-primary);
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* CONTEÚDO DA CIFRA DE CESAR */
+#cifra-container {
+    background-color: rgba(18, 18, 18, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    margin: 50px auto; 
+    max-width: 700px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    border: 1px solid #333;
+}
+
+#cifra-container h2 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    text-shadow: 0 0 3px var(--color-primary);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#texto-input, #chave-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #2a2a2a;
+    color: var(--color-text-light);
+    resize: vertical;
+}
+
+#texto-input:focus, #chave-input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 5px var(--color-primary);
+}
+
+#chave-input {
+    max-width: 100px;
+    text-align: center;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 30px;
+}
+.button-group button {
+    padding: 10px 25px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+#btn-cifrar {
+    background-color: #4CAF50;
+    color: white;
+}
+#btn-decifrar {
+    background-color: #03A9F4;
+    color: white;
+}
+#btn-limpar {
+    background-color: var(--color-error);
+    color: white;
+}
+
+.button-group button:hover {
+    filter: brightness(1.2);
+    transform: translateY(-2px);
+}
+
+#resultado-container {
+    margin-top: 30px;
+    padding: 15px;
+    border-top: 1px solid #444;
+}
+
+#resultado-container h3 {
+    margin-bottom: 10px;
+}
+
+#resultado-output {
+    background-color: #0d0d0d;
+    color: #00ff00;
+    border: 1px dashed var(--color-primary);
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 50px;
+    font-family: 'Consolas', monospace;
+    font-size: 1.1em;
+    word-wrap: break-word;
+}
+
+
+/* CONTEÚDO DA FUNÇAO DE HASH */
+#hash-container {
+    background-color: rgba(18, 18, 18, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    margin: 50px auto; 
+    max-width: 700px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    border: 1px solid #333;
+}
+
+.input-group label, #texto-input, #chave-input, #texto-hash-input, #algoritmo-select { 
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #2a2a2a;
+    color: var(--color-text-light);
+    resize: vertical;
+}
+#texto-input:focus, #chave-input:focus, #texto-hash-input:focus, #algoritmo-select:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 5px var(--color-primary);
+}
+#resultado-output, #hash-output {
+    background-color: #0d0d0d;
+    color: #00ff00;
+    border: 1px dashed var(--color-primary);
+}
+
+#hash-container h2 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    text-shadow: 0 0 3px var(--color-primary);
+}
+
+#btn-hash {
+    background-color: #03A9F4; 
+    color: white;
+}
+#btn-limpar-hash {
+    background-color: var(--color-error);
+    color: white;
+}

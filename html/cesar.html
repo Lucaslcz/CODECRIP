@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifra De César</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="top-navbar">
+        <span class="logo">CODECRIP</span>
+        <div class="nav-links">
+            <a href="index.html">INÍCIO</a>
+            <a href="cesar.html">CIFRA DE CÉSAR</a> 
+            <a href="hash.html">FUNÇÃO HASH</a>
+        </div>
+    </nav>
+
+    <section id="cifra-container"> 
+        <h2>Cifra de César</h2>
+        <form id="cripto-form">
+            
+            <div class="input-group">
+                <label for="texto-input">Texto (Claro ou Cifrado):</label>
+                <textarea id="texto-input" rows="6" placeholder="Digite a mensagem aqui..."></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="chave-input">Chave (Deslocamento):</label>
+                <input type="number" id="chave-input" min="1" max="25" value="3" required>
+            </div>
+
+            <div class="button-group">
+                <button type="button" id="btn-cifrar">CIFRAR</button>
+                <button type="button" id="btn-decifrar">DECIFRAR</button>
+                <button type="reset" id="btn-limpar">LIMPAR</button>
+            </div>
+
+        </form>
+        
+        <div id="resultado-container">
+            <h3>Resultado:</h3>
+            <p id="resultado-output">O resultado aparecerá aqui.</p>
+        </div>
+    </section>
+
+    <script src="/javascript/cesar.js"></script>
+</body>
+</html>
