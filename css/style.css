@@ -8,12 +8,6 @@
 
 /* CORPO DO SITE */
 body {
-    /*background-image: url("/HTML/Projetos/CODECRIP/midias/fundo.jpg");
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    position: relative;*/
     background-color: var(--color-background); 
     color: var(--color-text-light);
     font-family: 'Consolas', 'Courier New', monospace;
