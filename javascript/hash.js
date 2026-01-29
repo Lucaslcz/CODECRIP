@@ -41,7 +41,9 @@ async function gerarHash() {
     }
 }
 
-btnHash.addEventListener('click', gerarHash);
+btnHash.onclick = async () => {
+    await gerarHash();
+};
 
 btnLimpar.addEventListener('click', () => {
     textoInput.value = '';
