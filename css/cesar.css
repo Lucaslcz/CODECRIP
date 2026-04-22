@@ -1,0 +1,114 @@
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.hero-section h1 {
+    color: var(--color-primary);
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(0, 188, 212, 0.6);
+}
+
+.hero-section h1 span {
+    color: #fff;
+    text-shadow: 0 0 25px var(--color-primary);
+}
+
+#cifra-container {
+    background-color: var(--color-card-bg);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 0 auto 60px;
+    max-width: 700px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--color-text-dim);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#texto-input, #chave-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: 'Consolas', monospace;
+    transition: 0.3s;
+}
+
+#texto-input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.2);
+}
+
+#chave-input {
+    width: 100px;
+    text-align: center;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.button-group button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+#btn-cifrar { background-color: var(--color-success); color: white; }
+#btn-decifrar { background-color: #03A9F4; color: white; }
+#btn-limpar { background-color: var(--color-error); color: white; }
+
+.button-group button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.2);
+}
+
+#resultado-output {
+    background-color: #050505;
+    color: #00ff00;
+    border: 1px dashed var(--color-primary);
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 30px;
+    word-break: break-all;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Consolas', monospace;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+.copyright {
+    color: var(--color-text-dim);
+    font-size: 0.75rem;
+    margin-top: 15px;
+    opacity: 0.6;
+}

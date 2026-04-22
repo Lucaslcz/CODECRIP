@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CODECRIP | Algoritmo de Criptografia</title>
     <link rel="shortcut icon" href="descryption.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
@@ -19,18 +20,91 @@
         </div>
     </nav>
 
-    <h1>BEM-VINDO <span><br></span>
-        AO <span><br></span> 
-        CODECRIP
-    </h1>
+    <header class="hero-section">
+        <h1>BEM-VINDO AO <span>CODECRIP</span></h1>
+        <p class="subtitle">Explore o universo da segurança digital e criptografia.</p>
+    </header>
 
-    <div class="options-container">
-        <div id="left" class="action-button">
-            <a id="esquerdo" class="action-link" href="cesar.html">CIFRA DE CÉSAR</a>
+    <main>
+        <div class="options-container">
+            <div class="action-card main-btn">
+                <a href="cesar.html" class="action-link">CIFRA DE CÉSAR</a>
+                <p>Ferramenta de substituição clássica.</p>
+            </div>
+            <div class="action-card main-btn">
+                <a href="hash.html" class="action-link">FUNÇÃO HASH</a>
+                <p>Gerador de resumos irreversíveis.</p>
+            </div>
         </div>
-        <div id="right" class="action-button">
-            <a id="direito" class="action-link" href="hash.html">FUNÇÃO HASH</a>
+
+        <section class="info-section">
+            <div class="info-grid">
+                
+                <article class="info-box">
+                    <div class="info-image">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2092/2092663.png" alt="César">
+                    </div>
+                    <h3>🔐 Cifra de César</h3>
+                    <p>Uma das técnicas mais antigas da história. É uma <strong>cifra de substituição</strong> onde cada letra é deslocada no alfabeto por um valor fixo. Foi utilizada por Júlio César para proteger mensagens militares romanas de alto valor.</p>
+                </article>
+
+                <article class="info-box">
+                    <div class="info-image">
+                        <img src="https://cdn-icons-png.flaticon.com/512/8035/8035384.png" alt="Hash">
+                    </div>
+                    <h3>⚡ Função Hash</h3>
+                    <p>O Hash gera uma "impressão digital" única para qualquer dado. É um processo de via única: você pode gerar o código a partir do texto, mas nunca o contrário. Essencial para verificar a <strong>integridade</strong> de arquivos e senhas.</p>
+                </article>
+
+                <article class="info-box">
+                    <div class="info-image">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2592/2592317.png" alt="Moderna">
+                    </div>
+                    <h3>🌐 Criptografia Moderna</h3>
+                    <p>Baseada em problemas matemáticos complexos, utiliza algoritmos como o <strong>AES e RSA</strong>. Enquanto métodos clássicos podem ser quebrados manualmente, a criptografia atual exige poder computacional massivo para ser desafiada.</p>
+                </article>
+
+                <article class="info-box">
+                    <div class="info-image">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Chaves">
+                    </div>
+                    <h3>🔑 Simétrica vs Assimétrica</h3>
+                    <p>Na <strong>Criptografia Simétrica</strong>, utiliza-se apenas uma chave para trancar e abrir. Já na <strong>Assimétrica</strong>, utiliza-se um par de chaves: uma pública (para cifrar) e uma privada (para decifrar), garantindo segurança total na comunicação web.</p>
+                </article>
+
+                <article class="info-box">
+                    <div class="info-image">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2432/2432733.png" alt="Estegano">
+                    </div>
+                    <h3>🖼️ Esteganografia</h3>
+                    <p>Diferente da criptografia que "embaralha" a mensagem, a esteganografia <strong>esconde</strong> a existência da informação. É possível ocultar textos inteiros dentro de pixels de imagens ou frequências de áudio sem alterar a aparência original.</p>
+                </article>
+
+                <article class="info-box">
+                    <div class="info-image">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1162/1162456.png" alt="Escudo">
+                    </div>
+                    <h3>🛡️ Dica de Segurança</h3>
+                    <p>Segurança digital começa com boas práticas. Utilize sempre <strong>Gerenciadores de Senhas</strong> e habilite a <strong>Autenticação em Dois Fatores (2FA)</strong> em todas as suas contas para criar camadas extras de proteção contra invasões.</p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">CODECRIP</div>
+            <p>Protegendo a informação, um bit de cada vez.</p>
+            <div class="social-links">
+                <a href="https://github.com/Lucaslcz">GITHUB</a>
+                <a href="https://www.linkedin.com/in/lucas-da-cruz-dias">LINKEDIN</a>
+                <a href="https://www.instagram.com/lucas_c_d21">INSTAGRAM</a>
+            </div>
+            <div class="copyright">
+                &copy; 2026 CODECRIP - Todos os direitos reservados.
+            </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>

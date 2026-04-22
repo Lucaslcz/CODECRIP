@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cifra De César</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>CODECRIP | Cifra de César</title>
+    <link rel="shortcut icon" href="descryption.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/cesar.css">
 </head>
 
 <body>
@@ -18,33 +20,43 @@
         </div>
     </nav>
 
-    <section id="cifra-container"> 
-        <h2>Cifra de César</h2>
-        <form id="cripto-form">
+    <header class="hero-section">
+        <h1>CIFRA DE <span>CÉSAR</span></h1>
+    </header>
+
+    <main>
+        <section id="cifra-container"> 
+            <form id="cripto-form">
+                
+                <div class="input-group">
+                    <label for="texto-input">Mensagem Original ou Cifrada</label>
+                    <textarea id="texto-input" rows="5" placeholder="Insira o texto aqui a ser cifrado ou decifrado aqui..."></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="chave-input">Valor do Deslocamento (Chave)</label>
+                    <input type="number" id="chave-input" min="1" max="25" value="3" required>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" id="btn-cifrar">Cifrar Mensagem</button>
+                    <button type="button" id="btn-decifrar">Decifrar Mensagem</button>
+                    <button type="reset" id="btn-limpar">Limpar Tudo</button>
+                </div>
+            </form>
             
-            <div class="input-group">
-                <label for="texto-input">Texto (Claro ou Cifrado):</label>
-                <textarea id="texto-input" rows="6" placeholder="Digite a mensagem aqui..."></textarea>
+            <div id="resultado-container">
+                <div id="resultado-output">A mensagem cifrada ou decifrada aparecerá aqui...</div>
             </div>
+        </section>
+    </main>
 
-            <div class="input-group">
-                <label for="chave-input">Chave (Deslocamento):</label>
-                <input type="number" id="chave-input" min="1" max="25" value="3" required>
-            </div>
-
-            <div class="button-group">
-                <button type="button" id="btn-cifrar">CIFRAR</button>
-                <button type="button" id="btn-decifrar">DECIFRAR</button>
-                <button type="reset" id="btn-limpar">LIMPAR</button>
-            </div>
-
-        </form>
-        
-        <div id="resultado-container">
-            <h3>Resultado:</h3>
-            <p id="resultado-output">O resultado aparecerá aqui.</p>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">CODECRIP</div>
+            <p class="copyright">&copy; 2026 - Laboratório de Criptografia Experimental.</p>
         </div>
-    </section>
+    </footer>
 
     <script src="../javascript/cesar.js"></script>
 </body>
