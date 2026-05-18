@@ -171,3 +171,27 @@ h1 span {
         transform: translateY(0);
     }
 }
+
+@media (max-width: 768px) {
+    
+    .options-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .action-card {
+        width: 100%;
+        max-width: 320px;
+        padding: 20px 30px;
+    }
+
+    .action-card p {
+        display: none;
+    }
+
+    .action-link {
+        margin-bottom: 0;
+    }
+}
